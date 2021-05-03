@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>aboutme.html</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="sttyle.css">
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div class="container">
+			<img src="rk1.png" class="icon">
+				<nav>
+					<ul>
+						<li><a href="personalwebsite1.html">Home</a></li>
+						<li><a href="me.html">About Me</a></li>
+						<li><a href="academics.html">Academics</a></li>
+						<li><a href="hobbies1.html">Hobby</a></li>
+						<li><a href="contactme1.html">Contact Me</a></li>
+					</nav>
+				</nav>
+		</div>
+		
+		<div class="content">
+		<div class="photo">
+			<div class="pics">
+			  <img class="mySlides" src="pic.jpg" style="width:80%">
+			  <img class="mySlides" src="me.jpg" style="width:80%">
+			  
+			  <button class="buttonleft" onclick="plusDivs(-1)">&#10094;</button>
+			  <button class="buttonright" onclick="plusDivs(1)">&#10095;</button>
+			  
+			  
+			</div>
+	
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  if (n > x.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				}
+			</script>
+		</div>
+		<br />
+		<br />
+		
+		<div class="me">
+			<p>Namaste, I am Rojan KC and I am from Nepal. I am currently a sophomore at Northern Kentucky University pursuing bachelor's in Computer Information Technology .</p><br>
+				<P>My track is Web Administration and I plan to work as a software developer. I am also interested in designing websites.</p><br>
+					<p>Currently I am about to work on a summer project where I will be developing a game for the Department of Chemistry of my college.</P><br>
+						<p>I believe in hardwork and through it we can achieve what seems impossible.</p><br>
+		</div>
+		
+	</body>
+</html>
+		
